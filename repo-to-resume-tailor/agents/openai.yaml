@@ -1,0 +1,7 @@
+interface:
+  display_name: "Repo to Resume Tailor"
+  short_description: "Analyze repos and draft resume-ready tailored project text"
+  default_prompt: "Use $repo-to-resume-tailor to analyze this repository and write a resume-ready project description tailored to my target role."
+
+policy:
+  allow_implicit_invocation: true
