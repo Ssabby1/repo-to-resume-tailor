@@ -4,7 +4,7 @@
 
 Repository:
 
-`D:\graduate_design_graphrag\`
+`D:\graphrag\`
 
 Specific job description:
 

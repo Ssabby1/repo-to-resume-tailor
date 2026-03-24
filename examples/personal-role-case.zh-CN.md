@@ -4,7 +4,7 @@
 
 仓库：
 
-`D:\graduate_design_graphrag\`
+`D:\graphrag\`
 
 目标岗位：
 
