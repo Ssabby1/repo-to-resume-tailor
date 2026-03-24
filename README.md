@@ -87,19 +87,19 @@ Copy the inner `repo-to-resume-tailor/` folder into your Codex skills directory 
   references/examples.md
 ```
 
-See [docs/codex.md](docs/codex.md).
+See [docs/codex.md](docs/codex.md) | [中文说明](docs/codex.zh-CN.md).
 
 ### Claude Code
 
 Claude Code does not use the same native skill format. Reuse `SKILL.md`, `role_mapping.md`, and `references/prompt.md` as a reusable project prompt or instruction set.
 
-See [docs/claude-code.md](docs/claude-code.md).
+See [docs/claude-code.md](docs/claude-code.md) | [中文说明](docs/claude-code.zh-CN.md).
 
 ### Cursor
 
 Cursor can reuse this package as a project rule, reusable prompt, or agent instruction set.
 
-See [docs/cursor.md](docs/cursor.md).
+See [docs/cursor.md](docs/cursor.md) | [中文说明](docs/cursor.zh-CN.md).
 
 ## Quick Start
 
@@ -117,8 +117,8 @@ Use $repo-to-resume-tailor to analyze this repository and rewrite the project ex
 
 ## Examples
 
-- target role example: [examples/personal-role-case.md](examples/personal-role-case.md)
-- specific JD example: [examples/personal-jd-case.md](examples/personal-jd-case.md)
+- target role example: [English](examples/personal-role-case.md) | [中文](examples/personal-role-case.zh-CN.md)
+- specific JD example: [English](examples/personal-jd-case.md) | [中文](examples/personal-jd-case.zh-CN.md)
 
 ## License
 
@@ -194,7 +194,7 @@ repo-to-resume-tailor/
 - `repo-to-resume-tailor/references/prompt.md`
   可复用的长提示词模板
 - `examples/`
-  真实的岗位模式与 JD 模式示例
+  真实的岗位模式与 JD 模式示例，包含中英文读者版本
 - `docs/`
   不同 AI coding 工具下的使用说明
 
@@ -213,19 +213,19 @@ repo-to-resume-tailor/
   references/examples.md
 ```
 
-详见 [docs/codex.md](docs/codex.md)。
+详见 [docs/codex.md](docs/codex.md) 或 [docs/codex.zh-CN.md](docs/codex.zh-CN.md)。
 
 ### Claude Code
 
 Claude Code 不使用完全相同的原生 skill 格式，但可以把 `SKILL.md`、`role_mapping.md` 和 `references/prompt.md` 当作可复用规则集来使用。
 
-详见 [docs/claude-code.md](docs/claude-code.md)。
+详见 [docs/claude-code.md](docs/claude-code.md) 或 [docs/claude-code.zh-CN.md](docs/claude-code.zh-CN.md)。
 
 ### Cursor
 
 Cursor 可以把这套内容作为 project rule、reusable prompt 或 agent instruction 使用。
 
-详见 [docs/cursor.md](docs/cursor.md)。
+详见 [docs/cursor.md](docs/cursor.md) 或 [docs/cursor.zh-CN.md](docs/cursor.zh-CN.md)。
 
 ## 快速开始
 
@@ -243,8 +243,8 @@ Use $repo-to-resume-tailor to analyze this repository and rewrite the project ex
 
 ## 示例
 
-- 岗位方向示例：[examples/personal-role-case.md](examples/personal-role-case.md)
-- 具体 JD 示例：[examples/personal-jd-case.md](examples/personal-jd-case.md)
+- 岗位方向示例：[英文版](examples/personal-role-case.md) / [中文版](examples/personal-role-case.zh-CN.md)
+- 具体 JD 示例：[英文版](examples/personal-jd-case.md) / [中文版](examples/personal-jd-case.zh-CN.md)
 
 ## License
 
