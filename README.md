@@ -126,6 +126,9 @@ Use $repo-to-resume-tailor to analyze this repository and rewrite the project ex
 - target role example: [English](examples/personal-role-case.md) | [中文](examples/personal-role-case.zh-CN.md)
 - specific JD example: [English](examples/personal-jd-case.md) | [中文](examples/personal-jd-case.zh-CN.md)
 
+## Community
+[linux.do](https://linux.do/)
+
 ## License
 
 MIT License. See [LICENSE](LICENSE).
