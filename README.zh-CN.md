@@ -84,9 +84,9 @@ repo-to-resume-tailor/
 
 ```bash
 pip install .
-repo-to-resume-tailor init --ai codex
-repo-to-resume-tailor init --ai claude-code
-repo-to-resume-tailor init --ai cursor --project /path/to/your/project
+repo-to-resume-tailor init --ai codex ##codex使用
+repo-to-resume-tailor init --ai claude-code ##cc使用
+repo-to-resume-tailor init --ai cursor --project /path/to/your/project ##cursor使用
 ```
 
 如果 CLI 安装失败，可直接使用备用方式：
