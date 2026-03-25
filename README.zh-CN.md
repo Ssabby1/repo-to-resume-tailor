@@ -149,9 +149,6 @@ Use $repo-to-resume-tailor to analyze this repository and rewrite the project ex
 - 岗位方向示例：[英文版](examples/personal-role-case.md) / [中文版](examples/personal-role-case.zh-CN.md)
 - 具体 JD 示例：[英文版](examples/personal-jd-case.md) / [中文版](examples/personal-jd-case.zh-CN.md)
 
-## 社区
-
-[linux.do](https://linux.do/)
 
 ## License
 
