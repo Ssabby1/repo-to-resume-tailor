@@ -105,6 +105,20 @@ python install.py --ai claude-code
 python install.py --ai cursor --project /path/to/your/project
 ```
 
+AI-assisted install is also supported. You can ask your coding agent to install this repository directly from GitHub:
+
+```text
+Install this package from https://github.com/Ssabby1/repo-to-resume-tailor and set it up for Codex.
+```
+
+```text
+Install this package from https://github.com/Ssabby1/repo-to-resume-tailor and configure it for Claude Code.
+```
+
+```text
+Install this package from https://github.com/Ssabby1/repo-to-resume-tailor and add it to my current Cursor project.
+```
+
 Detailed installation notes:
 
 - [English installation guide](docs/installation.md)

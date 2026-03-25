@@ -34,6 +34,24 @@ python install.py --ai cursor --project /path/to/your/project
 
 这个备用方案不依赖全局 CLI 安装，直接在 clone 下来的仓库里运行，是新电脑上最稳妥的兜底方式。
 
+## 让 AI 代理代装
+
+你也可以直接让自己的 AI coding agent 从 GitHub 安装：
+
+```text
+帮我从 https://github.com/Ssabby1/repo-to-resume-tailor 安装这个仓库，并按 Codex 方式部署。
+```
+
+```text
+帮我从 https://github.com/Ssabby1/repo-to-resume-tailor 安装这个仓库，并配置到 Claude Code。
+```
+
+```text
+帮我从 https://github.com/Ssabby1/repo-to-resume-tailor 安装这个仓库，并配置到我当前的 Cursor 项目里。
+```
+
+这种方式更适合已经在使用 Codex、Claude Code、Cursor 等代理工具，并且代理具备 GitHub 访问、命令执行和本地写入权限的场景。
+
 ## 快速安装命令
 
 ### Codex

@@ -34,6 +34,24 @@ python install.py --ai cursor --project /path/to/your/project
 
 This fallback does not require the CLI package to be installed globally. It runs directly from the cloned repository and is the safest backup path for new machines.
 
+## AI-Assisted Install
+
+You can also ask your coding agent to install the package directly from GitHub:
+
+```text
+Install this package from https://github.com/Ssabby1/repo-to-resume-tailor and set it up for Codex.
+```
+
+```text
+Install this package from https://github.com/Ssabby1/repo-to-resume-tailor and configure it for Claude Code.
+```
+
+```text
+Install this package from https://github.com/Ssabby1/repo-to-resume-tailor and add it to my current Cursor project.
+```
+
+This approach works best when the agent can access GitHub, run shell commands, and write to the relevant tool configuration directories.
+
 ## Quick Commands
 
 ### Codex
