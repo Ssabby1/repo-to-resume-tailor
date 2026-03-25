@@ -80,6 +80,25 @@ repo-to-resume-tailor/
 
 ## 安装与使用
 
+快速安装方式：
+
+```bash
+pip install .
+repo-to-resume-tailor init --ai codex
+repo-to-resume-tailor init --ai claude-code
+repo-to-resume-tailor init --ai cursor --project /path/to/your/project
+```
+
+如果 CLI 安装失败，可直接使用备用方式：
+
+```bash
+python install.py --ai codex
+python install.py --ai claude-code
+python install.py --ai cursor --project /path/to/your/project
+```
+
+详见 [docs/installation.md](docs/installation.md) 或 [docs/installation.zh-CN.md](docs/installation.zh-CN.md)。
+
 ### Codex
 
 把内部的 `repo-to-resume-tailor/` 目录复制到 Codex 的 skills 目录中，使安装后的结构变成：

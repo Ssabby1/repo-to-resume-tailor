@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "repo-to-resume-tailor"
+version = "0.1.0"
+description = "Installable CLI and skill package for turning repositories into resume-ready project descriptions."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [
+  { name = "sasa" }
+]
+dependencies = []
+
+[project.scripts]
+repo-to-resume-tailor = "repo_to_resume_tailor_cli.__main__:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+repo_to_resume_tailor_cli = ["data/repo-to-resume-tailor/**/*"]

@@ -80,6 +80,25 @@ repo-to-resume-tailor/
 
 ## Installation and Usage
 
+Quick installer:
+
+```bash
+pip install .
+repo-to-resume-tailor init --ai codex
+repo-to-resume-tailor init --ai claude-code
+repo-to-resume-tailor init --ai cursor --project /path/to/your/project
+```
+
+Fallback if CLI installation fails:
+
+```bash
+python install.py --ai codex
+python install.py --ai claude-code
+python install.py --ai cursor --project /path/to/your/project
+```
+
+See [docs/installation.md](docs/installation.md) or [docs/installation.zh-CN.md](docs/installation.zh-CN.md).
+
 ### Codex
 
 Copy the inner `repo-to-resume-tailor/` folder into your Codex skills directory so the installed layout becomes:
