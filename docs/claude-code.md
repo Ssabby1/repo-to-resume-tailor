@@ -1,18 +1,45 @@
-# Claude Code Adaptation
+# Claude Code Installation
 
-Claude Code does not use the same native skill packaging as Codex. Reuse the content in:
+## Recommended
 
-- `repo-to-resume-tailor/SKILL.md`
-- `repo-to-resume-tailor/references/prompt.md`
+Global install:
 
-Recommended approaches:
+```bash
+pip install .
+repo-to-resume-tailor init --ai claude-code
+```
 
-- place the rules into a reusable prompt template
-- store the long prompt in a project note or command snippet
-- keep the evidence-first and anti-exaggeration rules unchanged
+Project-scoped install:
 
-Suggested adaptation prompt:
+```bash
+repo-to-resume-tailor init --ai claude-code --scope project --project /path/to/your/project
+```
+
+Fallback:
+
+```bash
+python install.py --ai claude-code
+python install.py --ai claude-code --scope project --project /path/to/your/project
+```
+
+The installer generates a slash command file:
 
 ```text
-Analyze this repository and turn it into one resume-ready project description. Base every claim on repository evidence, rank details by target role or JD fit, output a short evidence analysis first, include a dedicated tech stack line, and do not invent metrics or unsupported ownership claims.
+~/.claude/commands/repo-to-resume-tailor.md
 ```
+
+or, for project scope:
+
+```text
+/path/to/your/project/.claude/commands/repo-to-resume-tailor.md
+```
+
+## Usage
+
+Example:
+
+```text
+/repo-to-resume-tailor AI / Agent Development
+```
+
+The generated command reuses the same evidence-first, role-aware rules as the native Codex skill.

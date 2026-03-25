@@ -1,8 +1,21 @@
 # Codex Installation
 
-## Install
+## Recommended
 
-Copy the inner `repo-to-resume-tailor/` folder into your Codex skills directory:
+Install from the repository root:
+
+```bash
+pip install .
+repo-to-resume-tailor init --ai codex
+```
+
+If you prefer not to install the CLI package yet, use the fallback script:
+
+```bash
+python install.py --ai codex
+```
+
+This installs the native skill into:
 
 ```text
 ~/.codex/skills/repo-to-resume-tailor/
@@ -12,6 +25,7 @@ The installed layout should contain:
 
 ```text
 SKILL.md
+role_mapping.md
 agents/openai.yaml
 references/prompt.md
 references/examples.md

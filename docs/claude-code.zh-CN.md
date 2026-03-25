@@ -1,19 +1,45 @@
-# Claude Code 适配说明
+# Claude Code 安装说明
 
-Claude Code 不使用和 Codex 完全相同的原生 skill 打包方式。可以复用以下文件内容：
+## 推荐方式
 
-- `repo-to-resume-tailor/SKILL.md`
-- `repo-to-resume-tailor/role_mapping.md`
-- `repo-to-resume-tailor/references/prompt.md`
+全局安装：
 
-推荐做法：
+```bash
+pip install .
+repo-to-resume-tailor init --ai claude-code
+```
 
-- 将规则整理成可复用的 prompt 模板
-- 将长提示词保存为项目笔记或常用命令片段
-- 保持“证据优先”和“禁止夸大”的规则不变
+项目级安装：
 
-建议适配提示词：
+```bash
+repo-to-resume-tailor init --ai claude-code --scope project --project /path/to/your/project
+```
+
+备用方式：
+
+```bash
+python install.py --ai claude-code
+python install.py --ai claude-code --scope project --project /path/to/your/project
+```
+
+安装器会生成一个 slash command 文件：
 
 ```text
-Analyze this repository and turn it into one resume-ready project description. Base every claim on repository evidence, rank details by target role or JD fit, output a short evidence analysis first, include a dedicated tech stack line, and do not invent metrics or unsupported ownership claims.
+~/.claude/commands/repo-to-resume-tailor.md
 ```
+
+如果是项目级安装，则生成到：
+
+```text
+/path/to/your/project/.claude/commands/repo-to-resume-tailor.md
+```
+
+## 使用方式
+
+示例：
+
+```text
+/repo-to-resume-tailor AI / Agent Development
+```
+
+这个命令会复用与 Codex skill 相同的证据优先、岗位映射和防过度包装规则。

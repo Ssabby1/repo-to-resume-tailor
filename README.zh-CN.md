@@ -14,7 +14,7 @@
 这个仓库是平台中立的：
 
 - 在 Codex 中可以作为原生 skill 使用
-- 在 Claude Code、Cursor 或其他类似工具中，也可以作为提示词和规则包复用
+- 在 Claude Code、Cursor 或其他类似工具中，也可以通过生成命令或规则文件来复用
 
 ## 核心能力
 
@@ -43,6 +43,10 @@ repo-to-resume-tailor/
 |- README.zh-CN.md
 |- LICENSE
 |- .gitignore
+|- pyproject.toml
+|- install.py
+|- src/
+|  |- repo_to_resume_tailor_cli/
 |- repo-to-resume-tailor/
 |  |- SKILL.md
 |  |- role_mapping.md
@@ -57,6 +61,8 @@ repo-to-resume-tailor/
 |  |- personal-jd-case.md
 |  |- personal-jd-case.zh-CN.md
 |- docs/
+   |- installation.md
+   |- installation.zh-CN.md
    |- codex.md
    |- codex.zh-CN.md
    |- claude-code.md
@@ -73,14 +79,16 @@ repo-to-resume-tailor/
   岗位能力映射与技术栈优先级模板
 - `repo-to-resume-tailor/references/prompt.md`
   可复用的长提示词模板
+- `src/repo_to_resume_tailor_cli/`
+  面向 Codex、Claude Code、Cursor 的可安装 CLI
 - `examples/`
   真实的岗位模式与 JD 模式示例，包含中英文版本
 - `docs/`
-  不同 AI coding 工具下的使用说明
+  不同 AI coding 工具下的安装和使用说明
 
 ## 安装与使用
 
-快速安装方式：
+推荐方式：
 
 ```bash
 pip install .
@@ -89,7 +97,7 @@ repo-to-resume-tailor init --ai claude-code ##cc使用
 repo-to-resume-tailor init --ai cursor --project /path/to/your/project ##cursor使用
 ```
 
-如果 CLI 安装失败，可直接使用备用方式：
+如果 CLI 安装失败，可使用备用方式：
 
 ```bash
 python install.py --ai codex
@@ -97,34 +105,16 @@ python install.py --ai claude-code
 python install.py --ai cursor --project /path/to/your/project
 ```
 
-详见 [docs/installation.md](docs/installation.md) 或 [docs/installation.zh-CN.md](docs/installation.zh-CN.md)。
+安装细节请看：
 
-### Codex
+- [English installation guide](docs/installation.md)
+- [中文安装说明](docs/installation.zh-CN.md)
 
-把内部的 `repo-to-resume-tailor/` 目录复制到 Codex 的 skills 目录中，使安装后的结构变成：
+工具专属说明：
 
-```text
-~/.codex/skills/repo-to-resume-tailor/
-  SKILL.md
-  role_mapping.md
-  agents/openai.yaml
-  references/prompt.md
-  references/examples.md
-```
-
-详见 [docs/codex.md](docs/codex.md) 或 [docs/codex.zh-CN.md](docs/codex.zh-CN.md)。
-
-### Claude Code
-
-Claude Code 不使用完全相同的原生 skill 格式，但可以把 `SKILL.md`、`role_mapping.md` 和 `references/prompt.md` 当作可复用规则集来使用。
-
-详见 [docs/claude-code.md](docs/claude-code.md) 或 [docs/claude-code.zh-CN.md](docs/claude-code.zh-CN.md)。
-
-### Cursor
-
-Cursor 可以把这套内容作为 project rule、reusable prompt 或 agent instruction 使用。
-
-详见 [docs/cursor.md](docs/cursor.md) 或 [docs/cursor.zh-CN.md](docs/cursor.zh-CN.md)。
+- [Codex](docs/codex.md) | [中文](docs/codex.zh-CN.md)
+- [Claude Code](docs/claude-code.md) | [中文](docs/claude-code.zh-CN.md)
+- [Cursor](docs/cursor.md) | [中文](docs/cursor.zh-CN.md)
 
 ## 快速开始
 
@@ -144,6 +134,10 @@ Use $repo-to-resume-tailor to analyze this repository and rewrite the project ex
 
 - 岗位方向示例：[英文版](examples/personal-role-case.md) / [中文版](examples/personal-role-case.zh-CN.md)
 - 具体 JD 示例：[英文版](examples/personal-jd-case.md) / [中文版](examples/personal-jd-case.zh-CN.md)
+
+## 社区
+
+[linux.do](https://linux.do/)
 
 ## License
 

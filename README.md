@@ -14,7 +14,7 @@ This project is designed for two common resume-writing scenarios:
 The package is platform-friendly rather than platform-exclusive:
 
 - on Codex, it can be used as a native skill
-- on Claude Code, Cursor, or similar tools, it can be reused as a prompt and rules package
+- on Claude Code, Cursor, or similar tools, it can be reused through generated commands or rules
 
 ## What It Does
 
@@ -43,6 +43,10 @@ repo-to-resume-tailor/
 |- README.zh-CN.md
 |- LICENSE
 |- .gitignore
+|- pyproject.toml
+|- install.py
+|- src/
+|  |- repo_to_resume_tailor_cli/
 |- repo-to-resume-tailor/
 |  |- SKILL.md
 |  |- role_mapping.md
@@ -57,6 +61,8 @@ repo-to-resume-tailor/
 |  |- personal-jd-case.md
 |  |- personal-jd-case.zh-CN.md
 |- docs/
+   |- installation.md
+   |- installation.zh-CN.md
    |- codex.md
    |- codex.zh-CN.md
    |- claude-code.md
@@ -73,14 +79,16 @@ repo-to-resume-tailor/
   Role capability mapping and stack-priority templates
 - `repo-to-resume-tailor/references/prompt.md`
   Reusable long-form prompt reference
+- `src/repo_to_resume_tailor_cli/`
+  Installable CLI for Codex, Claude Code, and Cursor
 - `examples/`
   Realistic role-mode and JD-mode examples in English and Chinese
 - `docs/`
-  Usage notes for different AI coding tools
+  Usage notes and installation references for different AI coding tools
 
 ## Installation and Usage
 
-Quick installer:
+Recommended:
 
 ```bash
 pip install .
@@ -97,34 +105,16 @@ python install.py --ai claude-code
 python install.py --ai cursor --project /path/to/your/project
 ```
 
-See [docs/installation.md](docs/installation.md) or [docs/installation.zh-CN.md](docs/installation.zh-CN.md).
+Detailed installation notes:
 
-### Codex
+- [English installation guide](docs/installation.md)
+- [中文安装说明](docs/installation.zh-CN.md)
 
-Copy the inner `repo-to-resume-tailor/` folder into your Codex skills directory so the installed layout becomes:
+Tool-specific references:
 
-```text
-~/.codex/skills/repo-to-resume-tailor/
-  SKILL.md
-  role_mapping.md
-  agents/openai.yaml
-  references/prompt.md
-  references/examples.md
-```
-
-See [docs/codex.md](docs/codex.md) or [docs/codex.zh-CN.md](docs/codex.zh-CN.md).
-
-### Claude Code
-
-Claude Code does not use the same native skill format. Reuse `SKILL.md`, `role_mapping.md`, and `references/prompt.md` as a reusable project prompt or instruction set.
-
-See [docs/claude-code.md](docs/claude-code.md) or [docs/claude-code.zh-CN.md](docs/claude-code.zh-CN.md).
-
-### Cursor
-
-Cursor can reuse this package as a project rule, reusable prompt, or agent instruction set.
-
-See [docs/cursor.md](docs/cursor.md) or [docs/cursor.zh-CN.md](docs/cursor.zh-CN.md).
+- [Codex](docs/codex.md) | [中文](docs/codex.zh-CN.md)
+- [Claude Code](docs/claude-code.md) | [中文](docs/claude-code.zh-CN.md)
+- [Cursor](docs/cursor.md) | [中文](docs/cursor.zh-CN.md)
 
 ## Quick Start
 
@@ -146,6 +136,7 @@ Use $repo-to-resume-tailor to analyze this repository and rewrite the project ex
 - specific JD example: [English](examples/personal-jd-case.md) | [中文](examples/personal-jd-case.zh-CN.md)
 
 ## Community
+
 [linux.do](https://linux.do/)
 
 ## License
