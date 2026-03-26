@@ -1,6 +1,6 @@
 ---
 name: repo-to-resume-tailor
-description: Analyze a full code repository and generate one resume-ready project description grounded in repository evidence. Use when Codex is asked to turn a repository into concise project bullets, project summaries, or tailored experience based on either a target role direction or a specific job description for backend, AI or agent, data, full-stack, platform, or MLOps roles.
+description: Analyze a full code repository and generate one resume-ready project description grounded in repository evidence. Use when Codex is asked to turn a repository into concise project bullets, project summaries, or tailored experience based on either a target role direction or a specific job description for backend, AI or agent, AI product, data, full-stack, platform, or MLOps roles.
 ---
 
 # Repo to Resume Tailor
@@ -9,7 +9,7 @@ description: Analyze a full code repository and generate one resume-ready projec
 
 Analyze the repository before writing. Extract only verifiable project facts, then rewrite them into concise, resume-appropriate project descriptions. Optimize for credibility, role relevance, and hiring readability instead of broad repository summarization.
 
-Dynamically adjust extraction and writing priorities based on the user's target role direction or specific job description. For AI or Agent or LLM, backend, frontend, full-stack, data, algorithm, DevOps, security, testing, and related roles, prioritize the most role-relevant implementation evidence and technical proof from the repository. If a concrete job description is provided, treat its frequent responsibilities, technical keywords, and delivery expectations as the highest priority. If the role name is not directly covered, map it to the nearest role category based on the underlying responsibilities. Do not invent technologies, responsibilities, or outcomes that are not supported by repository evidence in order to improve match quality.
+Dynamically adjust extraction and writing priorities based on the user's target role direction or specific job description. For AI or Agent or LLM, AI product, backend, frontend, full-stack, data, algorithm, DevOps, security, testing, and related roles, prioritize the most role-relevant implementation evidence and technical proof from the repository. If a concrete job description is provided, treat its frequent responsibilities, technical keywords, and delivery expectations as the highest priority. If the role name is not directly covered, map it to the nearest role category based on the underlying responsibilities. Do not invent technologies, responsibilities, or outcomes that are not supported by repository evidence in order to improve match quality.
 
 Adjust repository analysis and project phrasing dynamically according to the user's target role direction or specific job description. Do not mechanically list every technology in the repository. Instead, prioritize the abilities, modules, and implementation details that are most relevant to the target role. If the user provides a concrete job description, treat its high-frequency responsibilities, keywords, and technical requirements as the highest priority.
 
@@ -42,6 +42,8 @@ Use the role mapping reference in [role_mapping.md](C:\Users\sasa\Documents\Play
 - When the role is directly covered, prioritize the mapped capability areas and evidence patterns from that reference.
 - When the user provides a concrete job description, use the role mapping as a helper but let repeated job-description responsibilities, keywords, and delivery requirements take highest priority.
 - When the role is not directly covered, merge it into the nearest category by underlying responsibilities rather than by title wording.
+- For AI product roles, prioritize product problem definition, user scenarios, feature structure, capability boundaries, evaluation loops, and landing strategy over raw infrastructure details. Even if the repository uses RAG, prompts, agent workflows, or orchestration frameworks, explain how those capabilities serve product goals and user experience.
+- If the repository mainly proves technical implementation but lacks clear product documents, workflow design, evaluation loops, or productized evidence, do not over-package it as an AI product project.
 - Never increase match quality by inventing unsupported technologies, responsibilities, or outcomes.
 
 ## Tech Stack Extraction

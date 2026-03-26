@@ -316,3 +316,28 @@ Common evidence:
 
 Important note:
 - Only express project-management capability when the repository contains explicit management traces. Do not infer management responsibilities from ordinary code structure alone.
+
+## 17. AI Product Manager / AI Product / LLM Product / Agent Product
+
+Focus on:
+- product scenario definition and problem breakdown
+- user-flow design and feature-structure design
+- mapping LLM capabilities to business or product requirements
+- how prompt, RAG, agent, or workflow capabilities land in concrete product features
+- evaluation design, experience optimization, and feedback-loop closure
+- feature boundaries, fallback behavior, safety, and controllability design
+- cross-functional collaboration, requirement pushing, and iteration strategy
+
+Common evidence:
+- README or docs describing scenarios, target users, user flows, or product goals
+- PRD, flowcharts, feature specs, evaluation docs, or solution-comparison docs
+- API or workflow modules that clearly represent product flow rather than only infrastructure
+- fallback, permission control, citation tracing, result explanation, or feedback mechanisms
+- explicit constraints on output quality, explainability, stability, or safety
+
+Writing emphasis:
+- explain what user or business problem the project tries to solve, what features were designed, and how AI capabilities were used to deliver them
+- do not mechanically translate pure engineering implementation into product language
+- do not only list low-level technologies; explain how the technology supports product goals and user experience
+- if the repository mainly proves technical implementation but lacks clear product design, requirement analysis, or feedback-loop evidence, do not over-package it as an AI product project
+- when both technical implementation and product evidence are strong, it is acceptable to express both AI product positioning and AI application or agent landing capability
