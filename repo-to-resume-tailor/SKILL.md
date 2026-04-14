@@ -37,7 +37,7 @@ If a claim depends mostly on Level 3 evidence, weaken the wording instead of pre
 
 ## Role Mapping
 
-Use the role mapping reference in [role_mapping.md](C:\Users\sasa\Documents\Playground\repo-to-resume-tailor\repo-to-resume-tailor\role_mapping.md) when matching repository evidence to role categories.
+Use the role mapping reference in [role_mapping.md](role_mapping.md) when matching repository evidence to role categories.
 
 - When the role is directly covered, prioritize the mapped capability areas and evidence patterns from that reference.
 - When the user provides a concrete job description, use the role mapping as a helper but let repeated job-description responsibilities, keywords, and delivery requirements take highest priority.
@@ -54,7 +54,7 @@ Always extract and output a dedicated tech stack line when the repository suppor
 - For AI or agent projects, explicitly surface technologies such as RAG, LangGraph, FastAPI, vector databases, embedding pipelines, tool calling, workflow orchestration, and model SDKs when the repository supports them
 - Do not hide the stack only inside prose when it can be named directly
 - Do not guess stack items that are not evidenced
-- Use the tech stack priority templates in [role_mapping.md](C:\Users\sasa\Documents\Playground\repo-to-resume-tailor\repo-to-resume-tailor\role_mapping.md) to decide stack ordering, grouping, and maximum stack count for high-frequency role categories
+- Use the tech stack priority templates in [role_mapping.md](role_mapping.md) to decide stack ordering, grouping, and maximum stack count for high-frequency role categories
 
 ## Writing Rules
 
@@ -98,8 +98,8 @@ Select the one version that best matches the user's input mode:
 
 ## References
 
-Read [references/prompt.md](C:\Users\sasa\Documents\Playground\repo-to-resume-tailor\repo-to-resume-tailor\references\prompt.md) when the user wants a fuller reusable prompt template or stricter output language.
+Read [references/prompt.md](references/prompt.md) when the user wants a fuller reusable prompt template or stricter output language.
 
-Read [references/examples.md](C:\Users\sasa\Documents\Playground\repo-to-resume-tailor\repo-to-resume-tailor\references\examples.md) when you need concrete examples of evidence handling and output shaping.
+Read [references/examples.md](references/examples.md) when you need concrete examples of evidence handling and output shaping.
 
-Read [role_mapping.md](C:\Users\sasa\Documents\Playground\repo-to-resume-tailor\repo-to-resume-tailor\role_mapping.md) when selecting which repository signals matter most for a target role or job description.
+Read [role_mapping.md](role_mapping.md) when selecting which repository signals matter most for a target role or job description.
